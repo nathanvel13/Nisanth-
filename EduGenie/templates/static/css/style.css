@@ -1,0 +1,358 @@
+:root {
+
+    font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    color: #172033;
+
+    background: #f4f7fb;
+
+    line-height: 1.55;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    background:
+
+        radial-gradient(
+            circle at top right,
+            rgba(91, 113, 255, .12),
+            transparent 35%
+        ),
+
+        #f4f7fb;
+}
+
+
+.app-shell {
+
+    width: min(980px, 92%);
+
+    margin: 0 auto;
+
+    padding: 42px 0 70px;
+}
+
+
+.hero {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    align-items: flex-start;
+
+    margin-bottom: 24px;
+}
+
+
+.eyebrow {
+
+    margin: 0 0 6px;
+
+    font-size: .78rem;
+
+    font-weight: 800;
+
+    letter-spacing: .14em;
+
+    color: #5367d8;
+}
+
+
+h1,
+h2 {
+
+    margin: 0;
+}
+
+
+h1 {
+
+    font-size:
+        clamp(
+            2.2rem,
+            6vw,
+            4rem
+        );
+
+    letter-spacing: -.05em;
+}
+
+
+.subtitle {
+
+    max-width: 650px;
+
+    margin: 8px 0 0;
+
+    color: #647084;
+}
+
+
+.status {
+
+    border:
+        1px solid
+        #d8deea;
+
+    background: white;
+
+    border-radius: 999px;
+
+    padding: 8px 13px;
+
+    font-size: .85rem;
+
+    white-space: nowrap;
+}
+
+
+.card {
+
+    background:
+        rgba(255,255,255,.94);
+
+    border:
+        1px solid
+        #e3e8f0;
+
+    border-radius: 20px;
+
+    padding: 24px;
+
+    box-shadow:
+        0 15px 45px
+        rgba(28, 41, 70, .07);
+
+    margin-bottom: 20px;
+}
+
+
+label {
+
+    display: block;
+
+    font-weight: 750;
+
+    margin: 0 0 8px;
+}
+
+
+select,
+textarea {
+
+    width: 100%;
+
+    border:
+        1px solid
+        #d5dce8;
+
+    border-radius: 12px;
+
+    background: #fbfcfe;
+
+    color: #172033;
+
+    padding: 12px 14px;
+
+    font: inherit;
+
+    margin-bottom: 18px;
+}
+
+
+textarea {
+
+    resize: vertical;
+
+    min-height: 170px;
+}
+
+
+select:focus,
+textarea:focus {
+
+    outline:
+        3px solid
+        rgba(83, 103, 216, .14);
+
+    border-color: #7585e0;
+}
+
+
+.actions,
+.result-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+
+button {
+
+    border: 0;
+
+    border-radius: 12px;
+
+    padding: 12px 18px;
+
+    font: inherit;
+
+    font-weight: 750;
+
+    cursor: pointer;
+
+    background: #5367d8;
+
+    color: white;
+}
+
+
+button:hover {
+
+    filter: brightness(.96);
+}
+
+
+button:disabled {
+
+    opacity: .6;
+
+    cursor: wait;
+}
+
+
+button.secondary {
+
+    background: #eef1f7;
+
+    color: #303a4f;
+}
+
+
+button.small {
+
+    padding: 8px 12px;
+
+    font-size: .85rem;
+}
+
+
+.result {
+
+    min-height: 180px;
+
+    margin-top: 18px;
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    background: #f7f9fc;
+
+    white-space: pre-wrap;
+
+    overflow-wrap: anywhere;
+}
+
+
+.result.empty {
+
+    color: #8791a4;
+}
+
+
+.quiz-question {
+
+    padding: 16px;
+
+    border:
+        1px solid
+        #dfe5ef;
+
+    border-radius: 14px;
+
+    margin-bottom: 14px;
+
+    background: white;
+}
+
+
+.quiz-question h3 {
+
+    margin-top: 0;
+}
+
+
+.option {
+
+    display: block;
+
+    padding: 8px 0;
+}
+
+
+.path-step {
+
+    border-left:
+        4px solid
+        #5367d8;
+
+    padding:
+        4px 0
+        4px
+        16px;
+
+    margin: 16px 0;
+}
+
+
+.error {
+
+    color: #a62828;
+
+    background: #fff2f2;
+}
+
+
+@media (max-width: 650px) {
+
+    .hero {
+
+        flex-direction: column;
+    }
+
+    .status {
+
+        align-self: flex-start;
+    }
+
+    .card {
+
+        padding: 18px;
+    }
+}
