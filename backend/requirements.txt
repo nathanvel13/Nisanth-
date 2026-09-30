@@ -1,0 +1,8 @@
+# Tested dependency set for the standard EduGenie backend.
+# Keep these exact versions together to avoid dependency drift.
+fastapi==0.128.2
+uvicorn[standard]==0.37.0
+google-genai==2.25.0
+python-dotenv==1.1.1
+httpx==0.28.1
+pytest==9.0.2
