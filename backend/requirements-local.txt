@@ -1,5 +1,0 @@
-# Optional dependencies for the LaMini-Flan-T5 local explanation provider.
-# Install these only when EXPLAIN_PROVIDER=local.
-transformers>=4.56,<5
-torch>=2.7,<3
-sentencepiece>=0.2,<1
